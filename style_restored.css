@@ -164,3 +164,13 @@ body {
 @keyframes pulse { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.08); opacity: 0.6; } 100% { transform: scale(1); opacity: 1; } }
 
 @media (max-width: 1200px) { .quest-grid { grid-template-columns: 1fr; } }
+
+/* Footer & Logs */
+.gemini-footer { margin-top: 40px; padding: 20px; border-top: 1px solid var(--glass-border); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 15px; }
+.gemini-badge { font-size: 10px; font-weight: 800; color: var(--accent-neon); letter-spacing: 2px; flex-shrink: 0; }
+.logic-log { font-family: monospace; font-size: 10px; color: var(--text-secondary); opacity: 0.7; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex-grow: 1; text-align: right; max-width: 100%; }
+
+@media (max-width: 768px) { 
+    .gemini-footer { flex-direction: column; text-align: center; } 
+    .logic-log { text-align: center; white-space: normal; word-wrap: break-word; } 
+}
