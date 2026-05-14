@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanQuest | Agentic Tournament Hub</title>
+    <link rel="stylesheet" href="style_restored.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%238a2be2%22/><text y=%22.9em%22 font-size=%2290%22 fill=%22white%22>F</text></svg>">
+    
+    <!-- Open Graph / Winning Meta Tags -->
+    <meta property="og:title" content="FanQuest: Agentic Fan Engagement Hub">
+    <meta property="og:description" content="A gamified tournament experience with adaptive AI coaching and loyalty progression.">
+    <meta property="og:type" content="website">
+    
+    <!-- Performance Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Suite Switcher -->
+    <nav class="suite-nav">
+        <a href="https://g-apl-service-94343063153.asia-south1.run.app" class="nav-item">AGENTPULSE</a>
+        <a href="#" class="nav-item active">FANQUEST</a>
+        <div id="google_translate_element" style="position: absolute; right: 20px; top: 10px;"></div>
+    </nav>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <div class="tournament-bar">
+        <span class="live-label">LIVE TOURNAMENT</span>
+        <div id="countdown" class="timer">02D : 14H : 55M : 03S</div>
+    </div>
+    
+    <div class="scan-bar"></div>
+
+    <div class="app-container">
+        <!-- Header: User Profile & Stats -->
+        <header class="player-header">
+            <div class="user-info">
+                <div class="avatar-ring">
+                    <svg class="custom-logo" viewBox="0 0 100 100">
+                        <path d="M50 5 L90 25 L90 55 C90 75 70 90 50 95 C30 90 10 75 10 55 L10 25 L50 5" fill="none" stroke="var(--accent-neon)" stroke-width="4" />
+                        <path d="M30 40 L50 60 L70 40" fill="none" stroke="var(--accent-neon)" stroke-width="6" stroke-linecap="round" />
+                    </svg>
+                    <div class="level-badge">LVL 12</div>
+                </div>
+                <div class="user-meta">
+                    <h1 class="username">VISHNU_ELITE</h1>
+                    <div class="rank-title">TACTICAL VETERAN</div>
+                </div>
+            </div>
+            
+            <div class="global-stats">
+                <div class="stat-box">
+                    <span class="stat-label">STREAK</span>
+                    <span class="stat-value streak-glow">🔥 5 DAYS</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">FAN COINS</span>
+                    <span class="stat-value gold-text">🪙 4,820</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="xp-container">
+            <div class="xp-info">
+                <span>XP PROGRESS</span>
+                <span>2,450 / 3,000 XP</span>
+            </div>
+            <div class="xp-bar-bg">
+                <div class="xp-bar-fill" style="width: 82%;"></div>
+            </div>
+        </div>
+
+        <main class="quest-grid">
+            <!-- Sidebar: AI Fan Coach Command Module -->
+            <aside class="ai-coach-card">
+                <div class="ai-status-pill">● LIVE_AI_SYNC</div>
+                <div class="ai-icon-container">
+                    <svg class="ai-robot-icon" viewBox="0 0 100 100">
+                        <circle cx="50" cy="40" r="30" fill="none" stroke="var(--accent-neon)" stroke-width="2" />
+                        <circle cx="40" cy="35" r="5" fill="var(--accent-neon)" />
+                        <circle cx="60" cy="35" r="5" fill="var(--accent-neon)" />
+                        <path d="M35 65 Q50 75 65 65" fill="none" stroke="var(--accent-neon)" stroke-width="2" />
+                        <path d="M20 50 L10 50 M80 50 L90 50" stroke="var(--accent-purple)" stroke-width="2" />
+                        <circle cx="50" cy="40" r="35" fill="none" stroke="var(--accent-purple)" stroke-width="1" stroke-dasharray="5,5" />
+                    </svg>
+                </div>
+                <div class="widget-header">
+                    AI STRATEGIST PRIME
+                </div>
+                <div class="coach-speech">
+                    <p id="coach-text">"Synchronizing with tournament telemetry. High-probability victory paths detected for VISHNU_ELITE."</p>
+                </div>
+                <div class="coach-action">
+                    <button class="btn-quest-premium" onclick="acceptChallenge()">INITIATE TACTICAL QUEST</button>
+                </div>
+                
+                <div class="data-ticker">
+                    <span>LIVE_STREAM: MUN 0.85x | LIV 1.2x | POSSESSION_FLUX: ACTIVE</span>
+                </div>
+                
+                <div class="radar-container">
+                    <svg class="radar-svg" viewBox="0 0 200 200" width="100%" height="200">
+                        <g class="radar-axes"></g>
+                        <polygon class="radar-polygon" points=""></polygon>
+                        <g class="radar-labels"></g>
+                    </svg>
+                </div>
+            </aside>
+
+            <!-- Main: Daily Quests & Predictions -->
+            <div class="quest-main">
+                <section class="section-card">
+                    <h2 class="section-title">ACTIVE QUESTS</h2>
+                    <div class="quest-list" id="quest-list">
+                        <div class="quest-item">
+                            <div class="quest-status complete">✓</div>
+                            <div class="quest-details">
+                                <h3>Daily Login</h3>
+                                <p>Return to the hub 3 days in a row</p>
+                            </div>
+                            <div class="quest-reward">+100 XP</div>
+                        </div>
+                        <div class="quest-item active">
+                            <div class="quest-status pulse">!</div>
+                            <div class="quest-details">
+                                <h3>The Oracle</h3>
+                                <p>Predict 3 correct goal scorers</p>
+                            </div>
+                            <div class="quest-reward">+500 XP</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-card">
+                    <h2 class="section-title">UPCOMING PREDICTIONS</h2>
+                    <div class="prediction-hub">
+                        <div class="match-mini">
+                            <div class="teams">
+                                <span>LIV</span> vs <span>MUN</span>
+                            </div>
+                            <div class="pred-actions">
+                                <button class="btn-sm" onclick="vote('LIV')">LIV Win</button>
+                                <button class="btn-sm" onclick="vote('DRAW')">Draw</button>
+                                <button class="btn-sm" onclick="vote('MUN')">MUN Win</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right: Reward Shop -->
+            <aside class="reward-shop">
+                <h2 class="section-title">REWARD VAULT</h2>
+                <div class="shop-item locked">
+                    <div class="item-icon">🛡️</div>
+                    <div class="item-info">
+                        <h4>Shield of Loyalty</h4>
+                        <p>Protect your streak for 1 day</p>
+                    </div>
+                    <div class="item-price">1,500 🪙</div>
+                </div>
+                <div class="shop-item">
+                    <div class="item-icon">✨</div>
+                    <div class="item-info">
+                        <h4>Neon Avatar Aura</h4>
+                        <p>A cosmetic glow for your profile</p>
+                    </div>
+                    <div class="item-price">2,000 🪙</div>
+                </div>
+                <button class="btn-secondary">VIEW ALL REWARDS</button>
+            </aside>
+        </main>
+
+        <!-- Project Intel Modal -->
+        <button id="intel-toggle" class="intel-btn">PROJECT INTEL</button>
+        <div id="intel-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="intel-header">
+                    <span class="intel-icon">⚙️</span>
+                    <h2>FANQUEST ARCHITECTURE</h2>
+                </div>
+                <div class="intel-body">
+                    <div class="intel-section">
+                        <h3>Agentic Gamification Loop</h3>
+                        <p>Leverages <strong>Observe-Reason-Act</strong> to personalize fan progression:</p>
+                        <ul>
+                            <li><strong>Observe</strong>: Tracks user loyalty and prediction history.</li>
+                            <li><strong>Reason</strong>: AI Coach calculates optimal challenges.</li>
+                            <li><strong>Act</strong>: Generates dynamic XP multipliers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="gemini-footer">
+            <div class="gemini-badge">
+                <span class="sparkle">✨</span> POWERED BY GEMINI 1.5 PRO
+            </div>
+            <div class="logic-log" id="logic-log">
+                AGENT_LOG: [Analyzing behavior... User shows 85% team loyalty. Adaptive quest generated.]
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
